@@ -1,3 +1,4 @@
+import 'dart:html';
 
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "我是一个标题",
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.yellow),
       home: Scaffold(
         appBar: AppBar(
           title: Text("scaffold标题"),
@@ -36,7 +37,7 @@ class MyHome extends StatelessWidget {
         style: TextStyle(
             fontSize: 30,
             fontWeight: FontWeight.bold,
-            color: Color.fromRGBO(255, 222, 2, 1)
+            color: Colors.black87
         ),
       ),
     );

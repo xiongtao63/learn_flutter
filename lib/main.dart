@@ -1,4 +1,4 @@
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("scaffold标题"),
-          elevation: 30,
         ),
         body: MyHome(),
       ),
@@ -29,15 +28,42 @@ class MyHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        "hello flutter 你好",
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-            color: Color.fromRGBO(255, 222, 2, 1)
-        ),
+    return Container(
+      height: 200,
+      margin: EdgeInsets.all(10),
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        // padding: EdgeInsets.all(20),
+        children: [
+          Container(
+            width: 180,
+            color: Colors.blue,
+          ),
+          Container(
+            width: 180,
+            color: Colors.yellow,
+            child: ListView(
+              children: [
+                Image.network("https://www.itying.com/images/flutter/1.png"),
+                Text(
+                    "文本信息",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 20
+                  ),
+                )
+              ],
+            ),
+          ),
+          Container(
+            width: 180,
+            color: Colors.red,
+          ),
+          Container(
+            width: 180,
+            color: Colors.orange,
+          ),
+        ],
       ),
     );
   }

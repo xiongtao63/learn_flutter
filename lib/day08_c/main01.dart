@@ -27,27 +27,19 @@ class MyHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Container(
-        height: 400,
-        width: 300,
-        color: Colors.red,
-        child: Stack(
-          alignment: Alignment.center,
-          children: const [
-            Align(
-              alignment: Alignment(1,0.3),
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
-            ),
-            Align(
-              alignment: Alignment.center,
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
-            ),
-            Align(
-              alignment: Alignment.topLeft,
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
-            ),
-          ],
-        ),
+      child: Stack(
+        alignment: Alignment.bottomRight,
+        children: [
+          Container(
+            width: 300,
+            height: 300,
+            color: Colors.red,
+          ),
+          Text("我是文本v",style: TextStyle(
+            fontSize: 30,
+            color: Colors.blue
+          ),)
+        ],
       ),
     );
   }

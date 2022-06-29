@@ -34,18 +34,16 @@ class MyHome extends StatelessWidget {
         child: Stack(
           alignment: Alignment.center,
           children: const [
-            Align(
-              alignment: Alignment(1,0.3),
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
+            Positioned(child: Icon(Icons.home,size: 30,color: Colors.white,)),
+            Positioned(
+                child: Icon(Icons.home,size: 30,color: Colors.white,),
+              left: 100,
+              top: 50,
             ),
-            Align(
-              alignment: Alignment.center,
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
-            ),
-            Align(
-              alignment: Alignment.topLeft,
-              child: Icon(Icons.home,color: Colors.white,size: 20,),
-            ),
+            Positioned(
+                child: Icon(Icons.home,size: 30,color: Colors.white,),
+            right: 10,
+            bottom: 0,),
           ],
         ),
       ),

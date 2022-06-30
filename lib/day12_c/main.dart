@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:learn_flutter/day12_c/Routes.dart';
 
-import 'day12_c/Tabs.dart';
+import 'Tabs.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "我是一个标题",
       theme: ThemeData(primarySwatch: Colors.blue),
-      // home:Taps(),
-      initialRoute: "/",
-      onGenerateRoute: onGenerateRoute,
+      home:Tabs(),
 
     );
   }

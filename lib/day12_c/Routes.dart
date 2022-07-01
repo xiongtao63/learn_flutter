@@ -1,8 +1,12 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/day12_c/Login.dart';
 import 'package:learn_flutter/day12_c/Product.dart';
 import 'package:learn_flutter/day12_c/ProductInfo.dart';
+import 'package:learn_flutter/day12_c/RegisterFirst.dart';
+import 'package:learn_flutter/day12_c/RegisterSecond.dart';
+import 'package:learn_flutter/day12_c/RegisterThird.dart';
 import 'package:learn_flutter/day13_c/Form.dart';
 import 'package:learn_flutter/day13_c/Search.dart';
 
@@ -16,6 +20,10 @@ final routes = {
   '/product': (context) => ProductPage(),
   '/productInfo':(context,{arguments}) => ProductInfoPage(arguments: arguments,),
   '/search':(context,{arguments}) => SearchPage(arguments: arguments,),
+  '/login':(context)=>LoginPage(),
+  '/registerFirst':(context)=>RegisterFirstPage(),
+  '/registerSecond':(context)=>RegisterSecondPage(),
+  '/registerThird':(context)=>RegisterThirdPage(),
 };
 
 //固定写法

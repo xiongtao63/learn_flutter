@@ -20,7 +20,13 @@ class _SettingPageState extends State<SettingPage> {
         ),
         ListTile(
           title: Text("dddddddddd"),
-        )
+        ),
+        ElevatedButton(onPressed: (){
+          Navigator.pushNamed(context, "/login");
+        }, child: Text("跳转到登录")),
+        ElevatedButton(onPressed: (){
+          Navigator.pushNamed(context, "/registerFirst");
+        }, child: Text("跳转到注册"))
       ],
     );
   }

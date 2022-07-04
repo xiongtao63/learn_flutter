@@ -9,6 +9,8 @@ import 'package:learn_flutter/day12_c/RegisterSecond.dart';
 import 'package:learn_flutter/day12_c/RegisterThird.dart';
 import 'package:learn_flutter/day13_c/Form.dart';
 import 'package:learn_flutter/day13_c/Search.dart';
+import 'package:learn_flutter/day15_c/AppBarDemo.dart';
+import 'package:learn_flutter/day15_c/TabBarController.dart';
 
 import '../day12_c/Tabs.dart';
 
@@ -24,6 +26,8 @@ final routes = {
   '/registerFirst':(context)=>RegisterFirstPage(),
   '/registerSecond':(context)=>RegisterSecondPage(),
   '/registerThird':(context)=>RegisterThirdPage(),
+  '/appBarDemo':(context)=>AppBarDemoPage(),
+  '/tabBarController':(context)=>TabBarControllerPage(),
 };
 
 //固定写法

@@ -35,7 +35,13 @@ class _HomePageState extends State<HomePage> {
         SizedBox(height: 20,),
         ElevatedButton(onPressed: (){
           Navigator.pushNamed(context, "/product");
-        }, child: Text("跳转到商品页面"))
+        }, child: Text("跳转到商品页面")),
+        ElevatedButton(onPressed: (){
+          Navigator.pushNamed(context, "/appBarDemo");
+        }, child: Text("跳转到appBar")),
+        ElevatedButton(onPressed: (){
+          Navigator.pushNamed(context, "/tabBarController");
+        }, child: Text("TabController定义顶部tab切换"))
       ],
     );
   }

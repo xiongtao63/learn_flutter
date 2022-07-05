@@ -11,6 +11,8 @@ import 'package:learn_flutter/day13_c/Form.dart';
 import 'package:learn_flutter/day13_c/Search.dart';
 import 'package:learn_flutter/day15_c/AppBarDemo.dart';
 import 'package:learn_flutter/day15_c/TabBarController.dart';
+import 'package:learn_flutter/day16_c/User.dart';
+import 'package:learn_flutter/day17_c/Button.dart';
 
 import '../day12_c/Tabs.dart';
 
@@ -28,6 +30,8 @@ final routes = {
   '/registerThird':(context)=>RegisterThirdPage(),
   '/appBarDemo':(context)=>AppBarDemoPage(),
   '/tabBarController':(context)=>TabBarControllerPage(),
+  '/user':(context)=>UserPage(),
+  '/buttonPage':(context)=>ButtonPage(),
 };
 
 //固定写法

@@ -41,7 +41,10 @@ class _HomePageState extends State<HomePage> {
         }, child: Text("跳转到appBar")),
         ElevatedButton(onPressed: (){
           Navigator.pushNamed(context, "/tabBarController");
-        }, child: Text("TabController定义顶部tab切换"))
+        }, child: Text("TabController定义顶部tab切换")),
+        ElevatedButton(onPressed: (){
+          Navigator.pushNamed(context, "/buttonPage");
+        }, child: Text("点击跳转到按钮演示页面"))
       ],
     );
   }

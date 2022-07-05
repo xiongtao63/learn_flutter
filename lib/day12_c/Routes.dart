@@ -13,6 +13,10 @@ import 'package:learn_flutter/day15_c/AppBarDemo.dart';
 import 'package:learn_flutter/day15_c/TabBarController.dart';
 import 'package:learn_flutter/day16_c/User.dart';
 import 'package:learn_flutter/day17_c/Button.dart';
+import 'package:learn_flutter/day18_c/CheckBox.dart';
+import 'package:learn_flutter/day18_c/FormDemo.dart';
+import 'package:learn_flutter/day18_c/Radio.dart';
+import 'package:learn_flutter/day18_c/TextField.dart';
 
 import '../day12_c/Tabs.dart';
 
@@ -32,6 +36,10 @@ final routes = {
   '/tabBarController':(context)=>TabBarControllerPage(),
   '/user':(context)=>UserPage(),
   '/buttonPage':(context)=>ButtonPage(),
+  '/textField':(context)=>TextFieldDemoPage(),
+  '/radio':(context)=>RadioDemo(),
+  '/checkBox':(context)=>CheckBoxDemo(),
+  '/formDemo':(context)=>FormDemoPage(),
 };
 
 //固定写法

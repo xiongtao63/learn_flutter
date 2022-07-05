@@ -15,36 +15,65 @@ class _HomePageState extends State<HomePage> {
     return Column(
       children: [
         ElevatedButton(
-            onPressed: (){
-              // Navigator.of(context).push(
-              //   MaterialPageRoute(
-              //       builder:(context){
-              //         return SearchPage();
-              //       })
-              // );
-              Navigator.pushNamed(context, "/search",arguments: {
-                "id": 12131
-              });
-            },
-            child: Text("跳转到搜索页面"),
+          onPressed: () {
+            // Navigator.of(context).push(
+            //   MaterialPageRoute(
+            //       builder:(context){
+            //         return SearchPage();
+            //       })
+            // );
+            Navigator.pushNamed(context, "/search", arguments: {"id": 12131});
+          },
+          child: Text("跳转到搜索页面"),
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Theme.of(context).accentColor),
+            backgroundColor:
+                MaterialStateProperty.all(Theme.of(context).accentColor),
             foregroundColor: MaterialStateProperty.all(Colors.white),
           ),
         ),
-        SizedBox(height: 20,),
-        ElevatedButton(onPressed: (){
-          Navigator.pushNamed(context, "/product");
-        }, child: Text("跳转到商品页面")),
-        ElevatedButton(onPressed: (){
-          Navigator.pushNamed(context, "/appBarDemo");
-        }, child: Text("跳转到appBar")),
-        ElevatedButton(onPressed: (){
-          Navigator.pushNamed(context, "/tabBarController");
-        }, child: Text("TabController定义顶部tab切换")),
-        ElevatedButton(onPressed: (){
-          Navigator.pushNamed(context, "/buttonPage");
-        }, child: Text("点击跳转到按钮演示页面"))
+        SizedBox(
+          height: 20,
+        ),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/product");
+            },
+            child: Text("跳转到商品页面")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/appBarDemo");
+            },
+            child: Text("跳转到appBar")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/tabBarController");
+            },
+            child: Text("TabController定义顶部tab切换")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/buttonPage");
+            },
+            child: Text("点击跳转到按钮演示页面")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/textField");
+            },
+            child: Text("表单演示页面")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/radio");
+            },
+            child: Text("radio")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/checkBox");
+            },
+            child: Text("checkBox")),
+        ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, "/formDemo");
+            },
+            child: Text("formDemo")),
       ],
     );
   }
